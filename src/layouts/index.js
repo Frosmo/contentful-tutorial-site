@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 import base from './base.css'
 import Container from '../components/container'
 import Navigation from '../components/navigation'
+import Helmet from 'react-helmet'
 
 class Template extends React.Component {
   render() {
@@ -16,6 +17,9 @@ class Template extends React.Component {
 
     return (
       <Container>
+        <Helmet>
+          <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+        </Helmet>
         <Navigation />
         {children()}
       </Container>
