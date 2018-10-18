@@ -4,6 +4,7 @@ import base from './base.css'
 import Container from '../components/container'
 import Navigation from '../components/navigation'
 import Helmet from 'react-helmet'
+import frosmo from '../../frosmo-config'
 
 class Template extends React.Component {
   render() {
@@ -19,6 +20,8 @@ class Template extends React.Component {
       <Container>
         <Helmet>
           <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+          <script type="text/javascript" charset="utf-8" src={frosmo.script}></script>
+          <script type="text/javascript" charset="utf-8" src={frosmo.origin}></script>
         </Helmet>
         <Navigation />
         {children()}

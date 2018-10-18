@@ -1,0 +1,4 @@
+export default {
+    script: "<FROSMO_SCRIPT_TAG>",
+    origin: "<SITE_SCRIPT_TAG>",
+}
