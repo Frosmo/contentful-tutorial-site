@@ -20,6 +20,8 @@ class Template extends React.Component {
       <Container>
         <Helmet>
           <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+          <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+          <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
           <script type="text/javascript" charset="utf-8" src={frosmo.script}></script>
           <script type="text/javascript" charset="utf-8" src={frosmo.origin}></script>
         </Helmet>
